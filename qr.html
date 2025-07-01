@@ -1,0 +1,10 @@
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<div id="qrcode"></div>
+
+<script>
+    var qr = new QRCode(document.getElementById("qrcode"), {
+        text: "http://your-website.com/attendance?employeeId=12345&type=checkin",
+        width: 128,
+        height: 128
+    });
+</script>
